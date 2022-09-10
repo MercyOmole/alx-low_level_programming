@@ -20,8 +20,6 @@ int main(void)
 		++ch;
 	}
 
-	return (0);
-
 	/*print A - Z*/
 	while (CH <= 'Z')
 	{
