@@ -1,11 +1,10 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * _mul - multiplies two integers
  *
  * @a: first input
  * @b: second input
- *
  * Return: 0
  */
 
