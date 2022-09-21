@@ -4,26 +4,26 @@
  * rev_string - reverses a string
  *
  * @s: string parameter input
+ *
+ * Return: void
  */
 
 void rev_string(char *s)
 {
-	char *t = s;
-	char n[1000];
-	short c = 0;
+	int len, i, half;
+	char temp;
 
-	while (*s != '0')
-	{
-		n[c] = *s;
-		s++;
-		c++;
-	}
-	c = 0;
+	for (len = 0; s[len] != '\0'; len++)
+		;
+	i = 0;
 
-	while (s > t)
+	half = len / 2;
+
+	while (half--)
 	{
-		s--;
-		*s = n[c];
-		c++;
+		temp = s[len - i - 1];
+		s[len - i - 1] = s[i];
+		s[i] = temp;
+		i++;
 	}
 }
