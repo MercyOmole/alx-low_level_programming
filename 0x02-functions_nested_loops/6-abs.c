@@ -6,7 +6,7 @@
  *
  * @n: takes in integer type input for function
  *
- * eturn: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int _abs(int n)
