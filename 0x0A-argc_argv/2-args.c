@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the number of arguments passed into the program
+ * main - prints all the arguments a program receives
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: Always (0) success
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	for (n = 0; n < argc; n++)
 	{
-		print("%s\n", argv[n]);
+		printf("%s\n", argv[n]);
 	}
-	return (0)
+	return (0);
 }
