@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _length - checks the length of a string
+ * _lenght - checks the length of a string
  * @s: is the string
  * Return: return the length of the string
  */
-int _length(char *s)
+int _lenght(char *s)
 {
-	if (*s == "\o")
+	if (*s == "\0")
 		return (0);
-	return (1 + _length(s + 1));
+	return (1 + _lenght(s + 1));
 }
 
 /**
