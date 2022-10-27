@@ -7,22 +7,37 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long int a = 1, b = 2, c, k, p, l, o, m, u, d, i;
 
-	for (count = 0; count < 98; count++)
+	c = a + b;
+
+	printf("%lu, %lu, ", a, b);
+
+	d = 3;
+	while (d < 89)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (count == 97)
-			printf("\n");
-		else
-			printf(", ");
+		printf("%lu, ", c);
+		a = b;
+		b = c;
+		c = a + b;
+		d++;
 	}
 
+	l = b / 1000000000;
+	o = b % 1000000000;
+	m = c / 1000000000;
+	u = c % 1000000000;
+
+	for (i = 89; i < 98; i++)
+	{
+		printf("%lu, %lu, ", m, u);
+		k = l;
+		p = o;
+		l = m;
+		o = u;
+		m = k + l + ((p + o) / 1000000000);
+		u = (p + o) % 1000000000;
+	}
+	printf("%lu, %lu\n", m, u);
 	return (0);
 }
