@@ -30,7 +30,7 @@ int main(void)
 
 	for (i = 89; i < 98; i++)
 	{
-		printf("%lu, %lu, ", m, u);
+		printf("%lu%lu, ", m, u);
 		k = l;
 		p = o;
 		l = m;
@@ -38,6 +38,6 @@ int main(void)
 		m = k + l + ((p + o) / 1000000000);
 		u = (p + o) % 1000000000;
 	}
-	printf("%lu, %lu\n", m, u);
+	printf("%lu%lu\n", m, u);
 	return (0);
 }
