@@ -10,7 +10,6 @@
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
- * 
  * Description: singly list node structure
  */
 typedef struct list_s
